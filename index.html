@@ -799,7 +799,9 @@ audio {
     <ul>
         <li><strong>r=1:</strong> F0 <- F0</li>
         <li><strong>r=0.5:</strong> F0 <- F0 x 0.5</li>
+        <li><strong>r=0.75:</strong> F0 <- F0 x 0.75</li>
         <li><strong>r=1.5:</strong> F0 <- F0 x 1.5</li>
+        <li><strong>r=1.25:</strong> F0 <- F0 x 1.25</li>
         <li><strong>r=↗:</strong> r linearly increases from 0.5 to 1.5 phoneme by phoneme</li>
         <li><strong>r=↘:</strong> r linearly decreases from 1.5 to 0.5 phoneme by phoneme</li>
     </ul>
@@ -939,6 +941,428 @@ audio {
     </tr>
 
     </table> 
+
+
+    <h4>Chinese experiments</h4>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>r=1.</th>
+      <th>r=0.5</th>
+      <th>r=0.75</th>
+      <th>r=1.5</th>
+      <th>r=1.25</th>
+      <th>r=↗</th>
+      <th>r=↘</th>
+      <th>Text</th>
+    </tr>
+
+      <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/CN/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/0.5/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/0.75/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/1.25/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/1.5/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/low-to-high/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/high-to-low/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">就是嘛，摔跤手防守严密，无懈可击。</td>
+       </tr>
+
+      <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/CN/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/0.5/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/0.75/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/1.25/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/1.5/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/low-to-high/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/high-to-low/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">为了能让政府继续自主。</td>
+       </tr>
+
+      <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/CN/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/0.5/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/0.75/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/1.25/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/1.5/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/low-to-high/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Pitch/CN/high-to-low/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">他们的射门击中门框次数多达6次。</td>
+       </tr>
+
+    </table> 
+
+
+    <h3>Duration manipulation: use the predicted duration multiplied with a ratio (r) to generate the speech</h3>
+    <ul>
+        <li><strong>r=1:</strong> d <- d</li>
+        <li><strong>r=0.5:</strong> d <- d x 0.5</li>
+        <li><strong>r=0.75:</strong> d <- d x 0.75</li>
+        <li><strong>r=1.5:</strong> d <- d x 1.5</li>
+        <li><strong>r=1.25:</strong> d <- d x 1.25</li>
+        <li><strong>r=↗:</strong> r linearly increases from 0.5 to 1.5 phoneme by phoneme</li>
+        <li><strong>r=↘:</strong> r linearly decreases from 1.5 to 0.5 phoneme by phoneme</li>
+    </ul>
+
+    <h4>English experiments</h4>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>r=1.</th>
+      <th>r=0.5</th>
+      <th>r=0.75</th>
+      <th>r=1.5</th>
+      <th>r=1.25</th>
+      <th>r=↗</th>
+      <th>r=↘</th>
+      <th>Text</th>
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/EN/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/0.5/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/0.75/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/1.25/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/1.5/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/slow-to-fast/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/fast-to-slow/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">In no characters is the contrast between the ugly and vulgar illegibility of the modern type.</td>
+       </tr>
+
+      <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/EN/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/0.5/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/0.75/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/1.25/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/1.5/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/slow-to-fast/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/fast-to-slow/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">The due relation of letter to pictures and other ornament was thoroughly understood by the old printers; so that</td>
+       </tr>
+
+      <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/EN/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/0.5/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/0.75/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/1.25/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/1.5/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/slow-to-fast/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/EN/fast-to-slow/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">as it was occupied and appropriated in eighteen ten.</td>
+    </tr>
+
+    </table>
+
+
+    <h4>Chinese experiments</h4>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>r=1.</th>
+      <th>r=0.5</th>
+      <th>r=0.75</th>
+      <th>r=1.5</th>
+      <th>r=1.25</th>
+      <th>r=↗</th>
+      <th>r=↘</th>
+      <th>Text</th>
+    </tr>
+
+    <tr>
+       <td>1</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/CN/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/0.5/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/0.75/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/1.25/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/1.5/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/slow-to-fast/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/fast-to-slow/1.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">就是嘛，摔跤手防守严密，无懈可击。</td>
+       </tr>
+
+      <tr>
+       <td>2</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/CN/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/0.5/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/0.75/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/1.25/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/1.5/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/slow-to-fast/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/fast-to-slow/2.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">为了能让政府继续自主。</td>
+       </tr>
+
+      <tr>
+       <td>3</td>
+       <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Original/CN/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/0.5/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/0.75/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/1.25/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/1.5/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/slow-to-fast/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td>
+       <audio controls>
+       <source src="./Demo/Prosody-control/Duration/CN/fast-to-slow/3.wav" type="audio/wav">
+       </audio>
+       </td>
+      <td align="center">他们的射门击中门框次数多达6次。</td>
+    </tr>
+
+    </table>
 
 </body>
 </html>
