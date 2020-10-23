@@ -24,17 +24,17 @@ audio {
   <hr style="height:3px;border:none;border-top:5px solid #555555;" />
 
     <strong><p class="toc_title", style="font-size:30px">Contents</p></strong>
-      <div id="toc_container", style="style=font-size:25px">
+      <div id="toc_container">
          <ul>
-            <li><strong><a href="#comparison">Method comparison</a></li></strong>
-            <li><strong><a href="#KD">Impact of different knowledge distillation strategies</a></li></strong>
-            <li><strong><a href="#prosody">Prosody manipulation</a></li></strong>
+            <li><strong><a href="#comparison", style="style=font-size:25px">1. Method comparison</a></li></strong>
+            <li><strong><a href="#KD", style="style=font-size:25px">2. Impact of different knowledge distillation strategies</a></li></strong>
+            <li><strong><a href="#prosody", style="style=font-size:25px">3. Prosody manipulation</a></li></strong>
          </ul>
       </div>
 
     <!--<h2>VC performance of different methods</h2>-->
     <a name="comparison">
-    <h2>Method comparison</h2>
+    <h2>1. Method comparison</h2>
     </a>
     <!--<li>Method comparison:</li>-->
     <ul>
@@ -46,7 +46,7 @@ audio {
         <li><strong>FCL-taco2-S:</strong> Proposed student FCL-taco2 model with much smaller size.</li>
     </ul>
 
-    <h3>English experiments</h3>
+    <h3>1.1. English experiments</h3>
     <table border="1">
     <tr>
       <th>No.</th>
@@ -236,7 +236,7 @@ audio {
 
     </table>
 
-  <h3>Chinese experiments</h3>
+  <h3>1.2. Chinese experiments</h3>
     <table border="1">
     <tr>
       <th>No.</th>
@@ -430,7 +430,7 @@ audio {
   <hr style="height:2px;border:none;border-top:3px solid #555555;" />
 
   <a name="KD">
-  <h2>Impact of different knowledge distillation strategies:</h2>
+  <h2>2. Impact of different knowledge distillation strategies:</h2>
   </a>
     <!--<li>Method comparison:</li>-->
     <ul>
@@ -442,7 +442,7 @@ audio {
         <li><strong>w/o KD:</strong> without Knowledge Distillation</li>
     </ul>
 
-    <h3>English experiments</h3>
+    <h3>2.1. English experiments</h3>
     <table border="1">
     <tr>
       <th>No.</th>
@@ -628,7 +628,7 @@ audio {
     </table>   
 
 
-    <h3>Chinese experiments</h3>
+    <h3>2.2. Chinese experiments</h3>
     <table border="1">
     <tr>
       <th>No.</th>
@@ -817,10 +817,10 @@ audio {
     <hr style="height:2px;border:none;border-top:3px solid #555555;" />
 
     <a name="prosody">
-    <h2>Prosody manipulation:</h2>
+    <h2>3. Prosody manipulation:</h2>
     </a>
     
-    <h3>Pitch manipulation: use the predicted F0 multiplied with a ratio (r) to generate the speech</h3>
+    <h3>3.1. Pitch manipulation: use the predicted F0 multiplied with a ratio (r) to generate the speech</h3>
     <ul>
         <li><strong>r=1:</strong> F0 <- F0</li>
         <li><strong>r=0.5:</strong> F0 <- F0 x 0.5</li>
@@ -831,7 +831,7 @@ audio {
         <li><strong>r=↘:</strong> r linearly decreases from 1.5 to 0.5 phoneme by phoneme</li>
     </ul>
 
-    <h4>English experiments</h4>
+    <h4>3.1.2. English experiments</h4>
     <table border="1">
     <tr>
       <th>No.</th>
@@ -968,7 +968,7 @@ audio {
     </table> 
 
 
-    <h4>Chinese experiments</h4>
+    <h4>3.1.2 Chinese experiments</h4>
     <table border="1">
     <tr>
       <th>No.</th>
@@ -1105,7 +1105,7 @@ audio {
     </table> 
 
 
-    <h3>Duration manipulation: use the predicted duration multiplied with a ratio (r) to generate the speech</h3>
+    <h3>3.2. Duration manipulation: use the predicted duration multiplied with a ratio (r) to generate the speech</h3>
     <ul>
         <li><strong>r=1:</strong> d <- d</li>
         <li><strong>r=0.5:</strong> d <- d x 0.5</li>
@@ -1116,7 +1116,7 @@ audio {
         <li><strong>r=↘:</strong> r linearly decreases from 1.5 to 0.5 phoneme by phoneme</li>
     </ul>
 
-    <h4>English experiments</h4>
+    <h4>3.2.1. English experiments</h4>
     <table border="1">
     <tr>
       <th>No.</th>
@@ -1253,7 +1253,7 @@ audio {
     </table>
 
 
-    <h4>Chinese experiments</h4>
+    <h4>3.2.2. Chinese experiments</h4>
     <table border="1">
     <tr>
       <th>No.</th>
