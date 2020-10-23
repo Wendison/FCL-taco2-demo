@@ -10,7 +10,7 @@ body {
 }
 audio {
   width: 100px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 </style>
@@ -23,8 +23,19 @@ audio {
   
   <hr style="height:3px;border:none;border-top:5px solid #555555;" />
 
+    <p class="toc_title">Contents</p>
+      <div id="toc_container">
+         <ul>
+            <li><a href="#comparison">Method comparison</a></li>
+            <li><a href="#KD">Impact of different knowledge distillation strategies</a></li>
+            <li><a href="#prosody">Prosody manipulation</a></li>
+         </ul>
+      </div>
+
     <!--<h2>VC performance of different methods</h2>-->
-    <h2>Method comparison:</h2>
+    <a name="comparison">
+    <h2>Method comparison</h2>
+    </a>
     <!--<li>Method comparison:</li>-->
     <ul>
         <li><strong>GT:</strong> Ground-truth speech</li>
@@ -418,7 +429,9 @@ audio {
 
   <hr style="height:2px;border:none;border-top:3px solid #555555;" />
 
+  <a name="KD">
   <h2>Impact of different knowledge distillation strategies:</h2>
+  </a>
     <!--<li>Method comparison:</li>-->
     <ul>
         <li><strong>FCL-taco2-S:</strong> student model trained with three proposed knowledge distillation strategies</li>
@@ -803,7 +816,9 @@ audio {
 
     <hr style="height:2px;border:none;border-top:3px solid #555555;" />
 
+    <a name="prosody">
     <h2>Prosody manipulation:</h2>
+    </a>
     
     <h3>Pitch manipulation: use the predicted F0 multiplied with a ratio (r) to generate the speech</h3>
     <ul>
