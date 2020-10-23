@@ -415,7 +415,10 @@ audio {
 
     </table>
 
-  <h2>Method comparison:</h2>
+
+  <hr style="height:2px;border:none;border-top:3px solid #555555;" />
+
+  <h2>Impact of different knowledge distillation strategies:</h2>
     <!--<li>Method comparison:</li>-->
     <ul>
         <li><strong>FCL-taco2-S:</strong> student model trained with three proposed knowledge distillation strategies</li>
@@ -808,8 +811,31 @@ audio {
     </table> 
 
 
+    <hr style="height:2px;border:none;border-top:3px solid #555555;" />
+
+    <h2>Prosody manipulation:</h2>
     
-       
+    <h3>Pitch manipulation: use the predicted F0 multiplied with a ratio (r) to generate the speech</h3>
+    <ul>
+        <li><strong>r=1:</strong> F0 <- F0</li>
+        <li><strong>r=0.5:</strong> F0 <- F0 x 0.5</li>
+        <li><strong>r=1.5:</strong> F0 <- F0 x 1.5</li>
+        <li><strong>r=↗:</strong> r linearly increases from 0.5 to 1.5 phoneme by phoneme</li>
+        <li><strong>r=↘:</strong> r linearly decreases from 1.5 to 0.5 phoneme by phoneme</li>
+    </ul>
+
+    <h4>English experiments</h4>
+    <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>r=1.</th>
+      <th>r=0.5</th>
+      <th>r=1.5</th>
+      <th>r=↗</th>
+      <th>r=↘</th>
+      <th>Text</th>
+    </tr>
+
 
 </body>
 </html>
